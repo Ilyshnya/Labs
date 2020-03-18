@@ -10,7 +10,7 @@ import ru.vsu.lab.entities.IPerson;
 import ru.vsu.lab.factory.ILabFactory;
 import ru.vsu.lab.repository.IPersonRepository;
 import ru.vsu.lab.repository.IRepository;
-import com.*;
+
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ public class FactoryConcretePerson<T extends Comparable> implements ILabFactory 
 
     @Override
     public IPerson createPerson() {
-        return new ConcretePerson();
+        return  null;
     }
 
     @Override

@@ -1,15 +1,12 @@
 
 package com.company;
 
-import com.company.MyCollection.MyList;
-import com.company.Person.AbstractPerson;
-import com.company.Person.PersonComparator.PersonNameComparator;
-import com.company.Patterns.Command.Printer.IPrintCommand;
-import com.company.Patterns.Command.Printer.Printerimpl.JFramePrinter;
-import com.company.Patterns.Command.Reader.IReadCommand;
-import com.company.Patterns.Command.Reader.Readerimpl.ConsoleReader;
+import com.company.Serviec.PersonApi;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.PropertyConfigurator;
 
-import java.util.ArrayList;
+import javax.xml.ws.Endpoint;
 
 
 /**
@@ -28,14 +25,16 @@ public final class Main {
      * @param args параметры.
      */
     public static void main(final String[] args) throws Exception {
-        AbstractPerson.setComparator(new PersonNameComparator<>());
-        MyList<AbstractPerson> arr;
-        IReadCommand reader = new ConsoleReader();
-        IPrintCommand printer = new JFramePrinter();
-        arr = reader.read();
-        printer.print(arr);
-        ArrayList<Integer> p;
-
+//        AbstractPerson.setComparator(new PersonNameComparator<>());
+//        MyList<AbstractPerson> arr;
+//        IReadCommand reader = new ConsoleReader();
+//        IPrintCommand printer = new JFramePrinter();
+//        arr = reader.read();
+//        printer.print(arr);
+//        ArrayList<Integer> p;
+        PropertyConfigurator.configure("C:\\Users\\Ilyashnya\\IdeaProjects\\Lab2\\src\\main\\resources\\logging.log");
+        BasicConfigurator.configure();
+        Endpoint.publish("http://localhost:9999/ws/hello", new PersonApi());
 
     }
 }

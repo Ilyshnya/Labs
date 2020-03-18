@@ -50,7 +50,7 @@ public class CsvFileReader implements IReadCommand {
                     divisionimpl.setId(0);
                     divisionimpl.setName(array[4]);//=new Divisionimpl(0,array[4]);
                     Divisionimpl.getList().add(divisionimpl);
-                    builder.setDivision(divisionimpl);
+                    builder.setDivision((Divisionimpl) divisionimpl);
                 }
                 list.add(builder.getResult());
             }
@@ -91,7 +91,7 @@ public class CsvFileReader implements IReadCommand {
                     divisionimpl.setId(0);
                     divisionimpl.setName(array[4]);//=new Divisionimpl(0,array[4]);
                     Divisionimpl.getList().add(divisionimpl);
-                    builder.setDivision(divisionimpl);
+                    builder.setDivision((Divisionimpl)divisionimpl);
                 }
                 list.add(builder.getResult());
             }

@@ -8,7 +8,89 @@
     <artifactId>Lab2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <dependencies>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-management</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-features-metrics</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf.xjc-utils</groupId>
+            <artifactId>cxf-xjc-runtime</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.cxf</groupId>-->
+<!--            <artifactId>cxf-rt-features-logging</artifactId>-->
+<!--            <version>3.3.0</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--        <groupId>org.docx4j</groupId>-->
+<!--        <artifactId>docx4j</artifactId>-->
+<!--        <version>6.0.0</version>-->
+<!--        <exclusions>-->
+<!--            <exclusion>-->
+<!--                <groupId>org.slf4j</groupId>-->
+<!--                <artifactId>slf4j-log4j12</artifactId>-->
+<!--            </exclusion>-->
+<!--            <exclusion>-->
+<!--                <groupId>log4j</groupId>-->
+<!--                <artifactId>log4j</artifactId>-->
+<!--            </exclusion>-->
+<!--        </exclusions>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http-jetty</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.4.0-b180830.0359</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.4.0-b180830.0438</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
         <dependency>
             <groupId>joda-time</groupId>
@@ -53,6 +135,12 @@
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
@@ -62,8 +150,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.12.02</source>
-                    <target>1.12.02</target>
+                    <source>1.11</source>
+                    <target>1.11</target>
                 </configuration>
             </plugin>
 

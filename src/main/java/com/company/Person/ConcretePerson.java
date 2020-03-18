@@ -1,9 +1,14 @@
 package com.company.Person;
 
+import com.company.Person.Division.Divisionimpl;
 import lombok.Data;
 import org.joda.time.LocalDate;
+import ru.vsu.lab.entities.IDivision;
 import ru.vsu.lab.entities.enums.Gender;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 
 
@@ -11,6 +16,8 @@ import java.math.BigDecimal;
  * Класс отвечает за создание
  * объекта Person с именем его работы.
  */
+@XmlRootElement(name = "concretePerson")
+@XmlAccessorType(XmlAccessType.FIELD)
 public final class ConcretePerson extends AbstractPerson   {
     /**
      * Название работы.
@@ -55,7 +62,6 @@ public final class ConcretePerson extends AbstractPerson   {
     public Integer getAge() {
         return LocalDate.now().getYear() - this.getBirthdate().getYear();
     }
-
 
     @Override
     public boolean equals(final Object obj) {

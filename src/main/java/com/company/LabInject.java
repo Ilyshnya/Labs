@@ -1,6 +1,6 @@
 package com.company;
 
-import java.beans.JavaBean;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

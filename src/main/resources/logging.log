@@ -1,0 +1,24 @@
+
+2020-03-16 16:41:42 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 16:41:43 XMLConverter [INFO] On method jaxbConv
+2020-03-16 16:41:59 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 16:44:41 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 17:20:16 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 17:23:01 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 17:23:13 PersonApi [INFO] Running the method: getPersonsByDivision(int id, String name)
+2020-03-16 17:23:13 PersonApi [INFO] Running the method: getPersonsByDivision(int id, String name)
+2020-03-16 17:23:14 PersonApi [INFO] The method finished: getPersonsByDivision(int id, String name)
+2020-03-16 17:23:14 PersonApi [INFO] The method finished: getPersonsByDivision(int id, String name)
+2020-03-16 17:23:38 XMLConverterTest [INFO] Metho JaxbConverter test
+2020-03-16 17:24:27 PersonApi [INFO] start getPersonbyId
+2020-03-16 17:24:27 PersonApi [INFO] start getPersonbyId
+2020-03-16 17:24:27 PersonApi [WARN] Небезопасный участок кода стартует ----
+2020-03-16 17:24:27 PersonApi [WARN] Небезопасный участок кода стартует ----
+2020-03-16 17:24:36 PersonApi [INFO] Running the method: getPersonsByDivision(int id, String name)
+2020-03-16 17:24:36 PersonApi [INFO] Running the method: getPersonsByDivision(int id, String name)
+2020-03-16 17:24:36 PersonApi [INFO] The method finished: getPersonsByDivision(int id, String name)
+2020-03-16 17:24:36 PersonApi [INFO] The method finished: getPersonsByDivision(int id, String name)
+2020-03-16 17:26:36 PersonApi [INFO] start getPersonbyId
+2020-03-16 17:26:36 PersonApi [INFO] start getPersonbyId
+2020-03-16 17:26:36 PersonApi [WARN] Небезопасный участок кода стартует ----
+2020-03-16 17:26:36 PersonApi [WARN] Небезопасный участок кода стартует ----

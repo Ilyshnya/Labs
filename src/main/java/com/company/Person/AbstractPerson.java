@@ -2,6 +2,7 @@ package com.company.Person;
 
 import com.company.IdGenerator.IIdGenerator;
 import com.company.IdGenerator.IdGeneratorimpl.MyIdGenerator;
+import com.company.Person.Division.Divisionimpl;
 import lombok.Data;
 import org.joda.time.LocalDate;
 import ru.vsu.lab.entities.IDivision;
@@ -16,7 +17,7 @@ import java.util.Comparator;
  * Класс описывающий человека.
  */
 @Data
-public abstract class AbstractPerson implements Comparable<AbstractPerson>, IPerson {
+public abstract class AbstractPerson implements Comparable<AbstractPerson> {
     /**
      * IdGenerator общий
      * и неизменяемый для всех
@@ -48,7 +49,7 @@ public abstract class AbstractPerson implements Comparable<AbstractPerson>, IPer
      * Компаратор
      * для сравнеия.
      */
-    private IDivision division;
+    private Divisionimpl division;
 
     private BigDecimal salary;
 
@@ -147,11 +148,11 @@ public abstract class AbstractPerson implements Comparable<AbstractPerson>, IPer
         this.salary = salary;
     }
 
-    public IDivision getDivision() {
+    public Divisionimpl getDivision() {
         return division;
     }
 
-    public void setDivision(IDivision division) {
+    public void setDivision(Divisionimpl division) {
         this.division = division;
     }
 }

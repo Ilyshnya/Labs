@@ -5,6 +5,7 @@ import com.company.Patterns.PersonBilder.Builder;
 import com.company.Person.AbstractPerson;
 import com.company.Person.ConcretePerson;
 
+import com.company.Person.Division.Divisionimpl;
 import org.joda.time.LocalDate;
 import ru.vsu.lab.entities.IDivision;
 import ru.vsu.lab.entities.enums.Gender;
@@ -41,7 +42,7 @@ public final class PersonBuilder implements Builder {
      */
     private String workName;
 
-    private IDivision division;
+    private Divisionimpl division;
 
     private BigDecimal salary;
     /**
@@ -86,7 +87,7 @@ public final class PersonBuilder implements Builder {
         return division;
     }
 
-    public void setDivision(IDivision division) {
+    public void setDivision(Divisionimpl division) {
         this.division = division;
     }
 }
